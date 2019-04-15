@@ -1,0 +1,151 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    font-size:100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* -----Global-------- */
+h1,h2{
+    font-size: 40px;
+    color:#13ABFF;
+}
+p{
+    font-size:20px;
+    color:#13ABFF;
+}
+.btnStarted{
+    padding:10px 20px;
+    background:#13ABFF;
+    color:#fff;
+    border:none;
+    box-shadow: 0px 3px 5px rgba(104,104,104,0.8);
+    margin-top:1em;
+    cursor: pointer;
+    transition: 0.5s linear;
+    border: 2px solid #13ABFF;
+    font-weight:bolder;
+}
+
+.btnStarted:hover{
+    background:none;
+    color:#13ABFF;
+}
+.btnNonFilled{
+    padding:10px 20px;
+    color:#13ABFF;
+    border:none;
+    box-shadow: 0px 3px 5px rgba(104,104,104,0.8);
+    margin-top:1em;
+    cursor: pointer;
+    transition: 0.5s linear;
+    border: 2px solid #13ABFF;
+    font-weight:bolder;
+    background:none;
+}
+.btnNonFilled:hover{
+    background:#13ABFF;
+    color:#fff;
+}
+/* -----------header-------------- */
+
+
+nav{
+    padding:0 5%;
+    width: 80%;
+    text-align: right;
+    padding:20px 20px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    color:#000;
+}
+nav a{
+    text-decoration: none;
+    padding:0 20px;
+    font-size: 20px;
+    color: #13ABFF;
+    transition: 0.5s linear;
+    font-weight: 700;
+}
+nav .fa-times{
+    display: none;
+}
+nav .free{
+    background:#13ABFF;
+    padding:5px 20px;
+    color:#fff;
+    border-radius: 1000px;
+}
+nav .fa-bars{
+    display: none;
+}
+.btnSignUp{
+    background: #A21BDB;
+    padding:10px ;
+    border-radius: 1000px;
+    color:#fff;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content div:nth-child(1){
+    text-align: center;
+    width: 50%;
+    position: relative;
+    top:-5em;
+}
+.header-content div:nth-child(1) h1{
+    color:#13ABFF;
+}
+
+
+
+/* ---------------about-------------- */
+
+
+
+
+/* -----------------Responsive--------------- */
+ /* Global */
+ @media(max-width:800px){
+    h1,h2{
+        font-size:25px;
+    }
+    nav .fa-bars{
+        display: block;
+        cursor: pointer;
+    }
+    nav .fa-times{
+        display: block;
+        cursor: pointer;
+    }
+   
+    nav .nav-content {
+        position: fixed;
+        top:0;
+        left:0;
+        height: 100%;
+        overflow-x: hidden;
+        background:#000;
+        z-index: 1000;
+        width: 0%;
+        text-align: center;
+        transition: 0.5s linear;
+    }
+    nav .nav-content a{
+        display: block;
+        padding:30px;
+        font-size: 30px;
+    }
+    
+    .header-content{
+        /* visibility: hidden; */
+    }
+ }
