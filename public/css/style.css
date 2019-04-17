@@ -1,4 +1,4 @@
-
+/* -----=----------------Global----------- */
 *{
     margin:0px;
     padding:0px;
@@ -7,7 +7,8 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-/* -----Global-------- */
+
+
 h1,h2{
     font-size: 40px;
     color:#13ABFF;
@@ -49,6 +50,7 @@ p{
     background:#13ABFF;
     color:#fff;
 }
+
 /* -----------header-------------- */
 
 
@@ -58,6 +60,52 @@ nav{
     text-align: right;
     padding:20px 20px;
     margin: 0 auto;
+    position: fixed;
+    top:0;
+   
+}
+nav .fa-bars, nav .fa-times{
+    display: block;
+}
+
+
+nav .nav-content{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+nav .nav-content > span{
+    background: rgba(24,39,51,0.85);
+    border-radius: 50%;
+    width:200vw;
+    height:200vw;
+    display: flex;
+    flex: none;
+    align-items:center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.5s ease;
+    z-index: 100;
+
+}
+nav .nav-content >span > span{
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+nav .nav-content > span > span > a {
+    display: block;
+    color:#fff;
+    padding:1rem;
 }
 .logo{
     float: left;
@@ -67,24 +115,20 @@ nav a{
     text-decoration: none;
     padding:0 20px;
     font-size: 20px;
-    color: #13ABFF;
+    color: #121212;
     transition: 0.5s linear;
     font-weight: 700;
 }
-nav .fa-times{
-    display: none;
-}
+
 nav .free{
     background:#13ABFF;
     padding:5px 20px;
     color:#fff;
     border-radius: 1000px;
 }
-nav .fa-bars{
-    display: none;
-}
+
 .btnSignUp{
-    background: #A21BDB;
+    background: #13ABFF;
     padding:10px ;
     border-radius: 1000px;
     color:#fff;
@@ -98,18 +142,36 @@ nav .fa-bars{
 .header-content div:nth-child(1){
     text-align: center;
     width: 50%;
-    position: relative;
-    top:-5em;
+  
 }
 .header-content div:nth-child(1) h1{
     color:#13ABFF;
 }
 
-
-
 /* ---------------about-------------- */
+.about{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.about .about_content span{
+    text-decoration:line-through;
+}
 
+/* -----footer----- */
+footer{
+    padding:30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+footer a {
+    text-decoration:none;
+    font-size:1em;
+    color:#13ABFF;
+    padding:10px;
+}
 
 
 /* -----------------Responsive--------------- */
@@ -118,34 +180,70 @@ nav .fa-bars{
     h1,h2{
         font-size:25px;
     }
-    nav .fa-bars{
+    nav .fa-bars, nav .fa-times{
         display: block;
-        cursor: pointer;
     }
-    nav .fa-times{
-        display: block;
-        cursor: pointer;
-    }
-   
-    nav .nav-content {
+    
+  
+    nav .nav-content{
         position: fixed;
         top:0;
-        left:0;
+        left: 0;
+        width: 100%;
         height: 100%;
-        overflow-x: hidden;
-        background:#000;
-        z-index: 1000;
-        width: 0%;
-        text-align: center;
-        transition: 0.5s linear;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
     }
-    nav .nav-content a{
+    nav .nav-content > span{
+        background: rgba(24,39,51,0.85);
+        border-radius: 50%;
+        width:200vw;
+        height:200vw;
+        display: flex;
+        flex: none;
+        align-items:center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.5s ease;
+        z-index: 100;
+
+    }
+    nav .nav-content >span > span{
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    nav .nav-content > span > span > a {
         display: block;
-        padding:30px;
-        font-size: 30px;
+        color:#fff;
+        padding:1rem;
     }
     
     .header-content{
-        /* visibility: hidden; */
+        flex-direction: column;
     }
+    .header-content div:nth-child(1){
+        width: 100%;
+        text-align: center;
+        padding-top:10em;
+        margin-bottom: 1em;
+    }
+    /* end of the header */
+
+    /* -----About----- */
+    .about{
+        flex-direction: column;
+    }
+    .about .about_content{
+        text-align:center;
+    }
+    footer{
+        flex-direction: column;
+    }
+
  }

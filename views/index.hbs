@@ -9,24 +9,27 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-
 </head>
 
 <body>
-    <!-- Header---------- -->
+    <!-- Header-->
     <header>
         <nav>
-            <a href="#" class="logo">DoIT <span class="free">Free</span></a>
+            <a href="/" class="logo">DoIT <span class="free">Free</span></a>
+            {{!-- font awesome menu bar --}}
             <i class="fas fa-bars fa-2x"></i>
-
             <span class="nav-content">
-                <p><i class="fas fa-times fa-2x" style="coloe:#fff"></i></p>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#" class=''>Sign Up</a>
+                <span>
+                    <span>
+                        <i class="fas fa-times fa-2x" style="color:#fff"></i>
+                        <a href="/">Home</a>
+                        <a href="#">About</a>
+                        <a href="#" class='btnSignUp'>Sign Up</a>
+                    </span>
+                </span>
             </span>
         </nav>
+
         <div class="header-content">
             <div>
                 <h1>
@@ -38,34 +41,30 @@
             <div>
                 <img src="../image/bg_about2.png" alt="" width="100%">
             </div>
-
-
         </div>
     </header>
-    <!-- ------end of header------ -->
+
+    <!-- end of header -->
 
     <section class="about">
+        <div>
+            <img src="../image/procrastinate10.png" alt="" width="100%">
+        </div>
         <div class="about_content">
-
-            <span>We are the solution to your <span id="procras">Procrastinate.</span></span>
+            <h2>We are the solution to your <span>Procrastinate.</span>
+                Make your own tasks and start Do IT</h2>
             <p><button class="btnNonFilled">Sign Up</button></p>
         </div>
-
     </section>
 
-    <section class="task">
-        <div class="task_content">
-            <h2>Make your own tasks and start Do IT</h2>
-            <p><button class="btnStarted">create</button></p>
 
-        </div>
-
-    </section>
     <footer>
         <a href="#" class="cpy">©2019 Chen Sokheng</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
+        <span>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+        </span>
     </footer>
     <script src="./js/index.js"></script>
 </body>
