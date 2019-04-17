@@ -14,22 +14,7 @@
 <body>
     <!-- Header-->
     <header>
-        <nav>
-            <a href="/" class="logo">DoIT <span class="free">Free</span></a>
-            {{!-- font awesome menu bar --}}
-            <i class="fas fa-bars fa-2x"></i>
-            <span class="nav-content">
-                <span>
-                    <span>
-                        <i class="fas fa-times fa-2x" style="color:#fff"></i>
-                        <a href="/">Home</a>
-                        <a href="#">About</a>
-                        <a href="#" class='btnSignUp'>Sign Up</a>
-                    </span>
-                </span>
-            </span>
-        </nav>
-
+        {{>navbar}}
         <div class="header-content">
             <div>
                 <h1>
@@ -56,16 +41,7 @@
             <p><button class="btnNonFilled">Sign Up</button></p>
         </div>
     </section>
-
-
-    <footer>
-        <a href="#" class="cpy">©2019 Chen Sokheng</a>
-        <span>
-            <a href="#">Contact Us</a>
-            <a href="#">Terms</a>
-            <a href="#">Privacy</a>
-        </span>
-    </footer>
+    {{>footer}}
     <script src="./js/index.js"></script>
 </body>
 
