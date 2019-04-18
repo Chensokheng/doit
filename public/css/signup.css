@@ -1,0 +1,104 @@
+
+html{
+    background-image: linear-gradient(to right top, #1e8fe8, #3783f8, #6872ff, #9a56fb, #c912eb);
+    background-size: cover;
+    height: auto;
+}.signup_page{
+    max-width: 400px;
+    margin: 0 auto;
+    padding:100px 0px;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.signup_container{
+    width:100%;  
+    padding-top:20px;
+    text-align: center;
+}
+
+.signup_container span{
+    font-size:25px;
+    font-weight:bold;
+    color:#fff;
+    cursor: pointer;
+}
+
+.signup_container .registerToggler{
+    color:#00D1B2;
+    background: #fff;
+    padding:10px;
+    border-radius: 15px;
+}
+
+/* sign up  form*/
+.sign_form{
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+    background: #fff;
+    border-radius:15px;
+    box-shadow: 0px 3px 5px rgba(104,104,104,0.7);
+}
+.sign_form input{
+    width: 90%;
+    border:none;
+    padding:20px 0;
+    cursor: pointer;
+    background: none;
+    margin:1em 0 1em 0;
+    border-bottom: 2px solid #13ABFF;
+    
+}
+::placeholder{
+    color:#3D52D6;
+    /* font-weight: bold; */
+}
+.sign_form button{
+    margin:10px;
+    border: none;
+    outline: none;
+
+    color:#fff;
+    padding:15px 50px;
+    border-radius: 25px;
+    background: #13ABFF;
+}
+.sign_form input[type='text']{
+    background: url(../image/username.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+
+}
+.sign_form input[type='password']{
+    background: url(../image/password.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.sign_form input[type='email']{
+    background: url(../image/email.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+/* signIn form */
+.signIn_form{
+    display: none;
+}
+.signIn_form input[type ='checkbox']{
+    display: inline-block;
+    background: blue;
+    height: 20px;
+    width: 20px;
+}
+.signIn_form .remember{
+    color:#3D52D6;
+    font-size: 18px;
+}
+.signIn_form a{
+    font-size:16px;
+    font-weight: bold;
+    color:#13ABFF;
+    display: block;
+    padding:20px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SignUP | DoIT</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/signup.css">
+
+    {{!-- link to the font-awesome --}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    {{>navbar}}
+    <section class="signup_page">
+
+        {{!-- The sign up and sing In toggler --}}
+        <div class="signup_container">
+            <span class="signUp registerToggler">
+                Sign Up
+            </span>
+            <span class="signIn">Sign In</span>
+        </div>
+        {{!--       end of the toggler --}}
+
+
+        {{!-- signup form --}}
+        <div class="sign_form signUp_form">
+            <form action="">
+                <p><input type="text" placeholder="Username"></p>
+                <p><input type="password" placeholder="Password"></p>
+                <p><input type="password" placeholder="Confirm password"></p>
+                <p><input type="email" placeholder="Email"></p>
+                <p><button>Sign Up</button></p>
+            </form>
+        </div>
+        {{!-- End signup form --}}
+
+
+
+        {{!-- signIn form --}}
+        <div class=" signIn_form sign_form ">
+            <form action="">
+                <p><input type="text" placeholder="Username"></p>
+                <p><input type="password" placeholder="Password"></p>
+                <p class="remember"><input type="checkbox">Remember password?</p>
+                <p><button>Sign In</button></p>
+                <a href="#">Forget password?</a>
+            </form>
+        </div>
+        {{!-- End signIn form --}}
+
+
+    </section>
+    <script src="./js/register.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

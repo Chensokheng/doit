@@ -1,8 +1,9 @@
-/* -----=----------------Global----------- */
+/* ----------------------Global---------------------- */
 *{
     margin:0px;
     padding:0px;
     font-size:100%;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -57,17 +58,18 @@ p{
 nav{
     padding:0 5%;
     width: 80%;
-    text-align: right;
     padding:20px 20px;
     margin: 0 auto;
     position: fixed;
     top:0;
+    text-align: right;
    
 }
-nav .fa-bars, nav .fa-times{
+nav   .fa-times{
     display: block;
     cursor: pointer;
 }
+
 
 
 nav .nav-content{
@@ -108,9 +110,8 @@ nav .nav-content > span > span > a {
     color:#fff;
     padding:1rem;
 }
-.logo{
-    float: left;
-    color:#000;
+nav img{
+    vertical-align: middle;
 }
 nav a{
     text-decoration: none;
@@ -120,7 +121,10 @@ nav a{
     transition: 0.5s linear;
     font-weight: 700;
 }
-
+.logo{
+    float: left;
+    padding-top:17px;
+}
 nav .free{
     background:#13ABFF;
     padding:5px 20px;
@@ -149,7 +153,7 @@ nav .free{
     color:#13ABFF;
 }
 
-/* ---------------about-------------- */
+/* ---------------About-------------- */
 .about{
     display: flex;
     align-items:center;
@@ -181,7 +185,7 @@ footer a {
     h1,h2{
         font-size:25px;
     }
-    nav .fa-bars, nav .fa-times{
+    nav .fa-times{
         display: block;
     }
     
@@ -223,6 +227,7 @@ footer a {
         display: block;
         color:#fff;
         padding:1rem;
+        font-size:2em;
     }
     
     .header-content{
@@ -236,6 +241,10 @@ footer a {
     }
     /* end of the header */
 
+
+
+
+
     /* -----About----- */
     .about{
         flex-direction: column;
@@ -243,8 +252,14 @@ footer a {
     .about .about_content{
         text-align:center;
     }
+    
+    /* -----Footer----- */
     footer{
         flex-direction: column;
     }
 
  }
+
+
+
+
